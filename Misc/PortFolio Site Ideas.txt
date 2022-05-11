@@ -1,0 +1,31 @@
+Portfolio sites
+http://demo.harnishdesign.net/html/simone/index-video-youtube-dark-classic-header.html
+https://www.leadpages.com/website-templates/preview/NXFZEEM2BeQxTi8TrcdnAR
+https://mowg-template.webflow.io
+https://youtemplate.webflow.io
+https://yommyfaces.github.io/PersonalPortfolio/
+https://www.figma.com/file/HkXnHuXwVaSHK4r8Z2Ism6/Codehance?node-id=0%3A1
+https://www.figma.com/file/gxj49XxKGtJZeFs3bculwH/Portfolio?node-id=28%3A89
+https://www.figma.com/proto/YaQJgUy9PdINN6HrfchCGp/Prototype?node-id=4%3A3&scaling=min-zoom&page-id=0%3A1
+
+
+
+Home Page Structure & Footer
+https://yommyfaces.github.io/PersonalPortfolio/#skills
+
+Navigation
+https://www.leadpages.com/website-templates/preview/NXFZEEM2BeQxTi8TrcdnAR
+
+Resume and Skills structure
+http://demo.harnishdesign.net/html/simone/index-video-youtube-dark-classic-header.html
+
+Contact Form (will tweak it a bit
+https://youtemplate.webflow.io
+
+Portoflio Display Structure
+https://mowg-template.webflow.io/project/praesent-porttitor
+
+
+Oxygen Mono (hello my name is Kevin)
+I am a Software Developer (montserrat)
+Open sans
