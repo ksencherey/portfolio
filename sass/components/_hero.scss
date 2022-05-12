@@ -1,0 +1,53 @@
+.hero {
+  background-color: var(--background);
+  padding: 10rem;
+
+  &--bgimg {
+    background-image: url(../../images/hero-small.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset; //0.7 controls the brightness of the tint, 3000px makes sure it goes all the way down
+  }
+
+  &__typeout {
+    overflow: hidden;
+    border-right: 0.15em solid red;
+    width: 0;
+    animation-name: typing;
+
+    /* @mixin typing {
+      animation: typing 1s forwards;
+    }
+
+    @mixin keyframes($typing) {
+      @keyframes (typing) {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    }*/
+  }
+
+  h1 {
+    font-size: 26rem;
+    color: var(--text);
+    line-height: 30rem;
+    margin-bottom: 15rem;
+
+    span {
+      color: var(--elements);
+    }
+  }
+
+  h2 {
+    font-size: 19rem;
+    font-family: "OxygenMono Regular";
+    color: var(--text);
+    line-height: 20rem;
+    margin-bottom: 10rem;
+  }
+}
