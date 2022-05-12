@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--elements);
+  color: var(--text);
+  text-align: center;
+  padding: 12rem;
+  font-size: 13rem;
+
+  @include respond-to("small") {
+    position: flex;
+    bottom: 0;
+  }
+}
