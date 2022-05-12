@@ -32,7 +32,7 @@
     background-color: var(--background);
     display: none;
     color: var(--text);
-    background-color: yellow;
+    //background-color: yellow;
   }
 
   &__toggle:checked ~ &__droplist {
@@ -64,16 +64,16 @@
       background-color: var(--elements);
       color: var(--text);
       font-size: 20rem;
-      background-color: green;
-      display: inline;
+      //background-color: green;
+      //display: inline;
 
       li {
         margin-left: 20rem;
       }
     }
 
-    // &_toggle:checked ~ &_droplist {
-    // display: block;
-    //}
+    &__toggle:checked ~ &__droplist {
+      display: flex;
+    }
   }
 }
