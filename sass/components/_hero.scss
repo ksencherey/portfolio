@@ -50,4 +50,32 @@
     line-height: 20rem;
     margin-bottom: 10rem;
   }
+
+  @include respond-to("small") {
+    //grid-template-columns: min-content, 1fr;
+    &__wrap {
+      display: grid;
+      grid-row: 1 / 4;
+      grid-column: 1 / 5;
+      max-width: 895rem;
+      margin: 10rem auto;
+    }
+
+    h1 {
+      font-size: 38rem;
+      max-width: 700rem;
+      line-height: 40rem;
+      padding: 10rem;
+    }
+
+    h2 {
+      font-size: 28rem;
+      line-height: 40rem;
+      padding: 10rem;
+    }
+
+    &--bgimg {
+      background-image: url(../../images/hero-big.svg);
+    }
+  }
 }

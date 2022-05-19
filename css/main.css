@@ -530,7 +530,6 @@ h1 {
   background-color: var(--background);
   display: none;
   color: var(--text);
-  background-color: yellow;
 }
 
 .topnav__toggle:checked ~ .topnav__droplist {
@@ -575,16 +574,154 @@ h1 {
     background-color: var(--elements);
     color: var(--text);
     font-size: 20rem;
-    background-color: green;
-    display: inline;
   }
   .topnav__droplist li {
     margin-left: 20rem;
+  }
+  .topnav__toggle:checked ~ .topnav__droplist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .container {
   padding: 10rem 20rem;
   margin: 0 auto;
+}
+
+.footer {
+  background-color: var(--elements);
+  color: var(--text);
+  text-align: center;
+  padding: 12rem;
+  font-size: 13rem;
+}
+
+@media (min-width: 767px) {
+  .footer {
+    position: flex;
+    bottom: 0;
+  }
+}
+
+.hero {
+  background-color: var(--background);
+  padding: 10rem;
+}
+
+.hero--bgimg {
+  background-image: url(../../images/hero-small.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  -webkit-box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 3000px rgba(0, 0, 0, 0.5) inset;
+}
+
+.hero__typeout {
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  width: 0;
+  -webkit-animation-name: typing;
+          animation-name: typing;
+  /* @mixin typing {
+      animation: typing 1s forwards;
+    }
+
+    @mixin keyframes($typing) {
+      @keyframes (typing) {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    }*/
+}
+
+.hero h1 {
+  font-size: 26rem;
+  color: var(--text);
+  line-height: 30rem;
+  margin-bottom: 15rem;
+}
+
+.hero h1 span {
+  color: var(--elements);
+}
+
+.hero h2 {
+  font-size: 19rem;
+  font-family: "OxygenMono Regular";
+  color: var(--text);
+  line-height: 20rem;
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 767px) {
+  .hero__wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    max-width: 895rem;
+    margin: 10rem auto;
+  }
+  .hero h1 {
+    font-size: 38rem;
+    max-width: 700rem;
+    line-height: 40rem;
+    padding: 10rem;
+  }
+  .hero h2 {
+    font-size: 28rem;
+    line-height: 40rem;
+    padding: 10rem;
+  }
+  .hero--bgimg {
+    background-image: url(../../images/hero-big.svg);
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10rem;
+}
+
+.form__group {
+  margin-top: 5rem;
+}
+
+.form__btn1 {
+  background-color: var(--elements);
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem;
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 5rem;
+  margin-right: 50rem;
+}
+
+.form__btn2 {
+  background-color: var(--elements);
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem;
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
