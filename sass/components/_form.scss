@@ -8,22 +8,22 @@
 
   &__btn1 {
     background-color: var(--elements);
-    border: none;
     justify-content: space-between;
     padding: 10rem;
     color: var(--text);
     font-weight: bold;
     border-radius: 5rem;
-    margin-right: 50rem;
+    margin-right: 10rem;
+    border: 2px solid crimson;
   }
 
   &__btn2 {
     background-color: var(--elements);
-    border: none;
     justify-content: space-between;
     padding: 10rem;
     color: var(--text);
     font-weight: bold;
     border-radius: 5rem;
+    border: 2px solid crimson;
   }
 }

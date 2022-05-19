@@ -1,6 +1,6 @@
 :root {
   --background: #1a1a1a;
-  --elements: #da2323;
+  --elements: #ed143d;
   --text: #ededed;
   --icons: #674307;
 }
@@ -702,7 +702,6 @@ h1 {
 
 .form__btn1 {
   background-color: var(--elements);
-  border: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -710,12 +709,12 @@ h1 {
   color: var(--text);
   font-weight: bold;
   border-radius: 5rem;
-  margin-right: 50rem;
+  margin-right: 10rem;
+  border: 2px solid crimson;
 }
 
 .form__btn2 {
   background-color: var(--elements);
-  border: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -723,5 +722,6 @@ h1 {
   color: var(--text);
   font-weight: bold;
   border-radius: 5rem;
+  border: 2px solid crimson;
 }
 /*# sourceMappingURL=main.css.map */
