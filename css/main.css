@@ -608,10 +608,12 @@ h1 {
 .hero {
   background-color: var(--background);
   padding: 10rem;
+  font-family: sans-serif;
+  background-attachment: fixed;
 }
 
 .hero--bgimg {
-  background-image: url(../../images/hero-small.svg);
+  background: url(../../images/hero-small.svg) no-repeat center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -620,25 +622,88 @@ h1 {
 }
 
 .hero__typeout {
-  overflow: hidden;
-  border-right: 0.15em solid red;
-  width: 0;
-  -webkit-animation-name: typing;
-          animation-name: typing;
-  /* @mixin typing {
-      animation: typing 1s forwards;
-    }
+  display: inline-block;
+  vertical-align: bottom;
+  font-weight: bold;
+  padding-left: 5px;
+}
 
-    @mixin keyframes($typing) {
-      @keyframes (typing) {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-    }*/
+.hero__typeout > span {
+  color: var(--elements);
+  font-size: 26rem;
+  display: -ms-grid;
+  display: grid;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.hero__typeout span span {
+  width: 0%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  overflow: hidden;
+  height: inherit;
+  word-break: break-all;
+  -webkit-animation: c 0.5s infinite steps(1), t 2s linear infinite alternate, m 16s steps(4) infinite;
+          animation: c 0.5s infinite steps(1), t 2s linear infinite alternate, m 16s steps(4) infinite;
+}
+
+.hero__type span span:before {
+  content: " ";
+  display: inline-block;
+}
+
+@-webkit-keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes c {
+  0%,
+  100% {
+    -webkit-box-shadow: 5px 0 0 #0000;
+            box-shadow: 5px 0 0 #0000;
+  }
+  50% {
+    -webkit-box-shadow: 5px 0 0 crimson;
+            box-shadow: 5px 0 0 crimson;
+  }
+}
+
+@keyframes c {
+  0%,
+  100% {
+    -webkit-box-shadow: 5px 0 0 #0000;
+            box-shadow: 5px 0 0 #0000;
+  }
+  50% {
+    -webkit-box-shadow: 5px 0 0 crimson;
+            box-shadow: 5px 0 0 crimson;
+  }
+}
+
+@-webkit-keyframes m {
+  100% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+}
+
+@keyframes m {
+  100% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
 }
 
 .hero h1 {
@@ -648,8 +713,11 @@ h1 {
   margin-bottom: 15rem;
 }
 
-.hero h1 span {
-  color: var(--elements);
+.hero__msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
 }
 
 .hero h2 {
@@ -679,10 +747,31 @@ h1 {
     line-height: 40rem;
     padding: 10rem;
   }
+  .hero__typeout {
+    display: inline-block;
+    vertical-align: bottom;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  .hero__typeout > span {
+    color: var(--elements);
+    font-size: 46rem;
+    display: -ms-grid;
+    display: grid;
+    height: 1.5em;
+    overflow: hidden;
+  }
+  .hero__msg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+  }
   .hero h2 {
     font-size: 28rem;
     line-height: 40rem;
     padding: 10rem;
+    font-family: cursive;
   }
   .hero--bgimg {
     background-image: url(../../images/hero-big.svg);
@@ -705,7 +794,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10rem;
+  padding: 10rem 20rem 10rem 20rem;
   color: var(--text);
   font-weight: bold;
   border-radius: 5rem;

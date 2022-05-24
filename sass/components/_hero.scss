@@ -1,9 +1,13 @@
 .hero {
   background-color: var(--background);
   padding: 10rem;
+  font-family: sans-serif;
+  background-attachment: fixed;
 
   &--bgimg {
-    background-image: url(../../images/hero-small.svg);
+    //background-image: url(../../images/hero-small.svg);
+    background: url(../../images/hero-small.svg) no-repeat center;
+    //height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -11,25 +15,56 @@
   }
 
   &__typeout {
+    display: inline-block;
+    vertical-align: bottom;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  &__typeout > span {
+    color: var(--elements);
+    font-size: 26rem;
+    display: grid;
+    height: 1.5em;
     overflow: hidden;
-    border-right: 0.15em solid red;
-    width: 0;
-    animation-name: typing;
+  }
 
-    /* @mixin typing {
-      animation: typing 1s forwards;
+  &__typeout span span {
+    width: 0%;
+    max-width: max-content;
+    overflow: hidden;
+    height: inherit;
+    word-break: break-all;
+    animation: c 0.5s infinite steps(1), t 2s linear infinite alternate,
+      m 16s steps(4) infinite;
+  }
+
+  &__type span span:before {
+    content: " ";
+    display: inline-block;
+  }
+
+  @keyframes t {
+    90%,
+    100% {
+      width: 100%;
     }
+  }
 
-    @mixin keyframes($typing) {
-      @keyframes (typing) {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
-    }*/
+  @keyframes c {
+    0%,
+    100% {
+      box-shadow: 5px 0 0 #0000;
+    }
+    50% {
+      box-shadow: 5px 0 0 crimson;
+    }
+  }
+
+  @keyframes m {
+    100% {
+      transform: translateY(-400%);
+    }
   }
 
   h1 {
@@ -37,10 +72,11 @@
     color: var(--text);
     line-height: 30rem;
     margin-bottom: 15rem;
+  }
 
-    span {
-      color: var(--elements);
-    }
+  &__msg {
+    display: flex;
+    white-space: nowrap;
   }
 
   h2 {
@@ -68,10 +104,31 @@
       padding: 10rem;
     }
 
+    &__typeout {
+      display: inline-block;
+      vertical-align: bottom;
+      font-weight: bold;
+      padding-left: 5px;
+    }
+
+    &__typeout > span {
+      color: var(--elements);
+      font-size: 46rem;
+      display: grid;
+      height: 1.5em;
+      overflow: hidden;
+    }
+
+    &__msg {
+      display: flex;
+      white-space: nowrap;
+    }
+
     h2 {
       font-size: 28rem;
       line-height: 40rem;
       padding: 10rem;
+      font-family: cursive;
     }
 
     &--bgimg {
