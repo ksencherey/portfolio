@@ -1,0 +1,147 @@
+.aboutme {
+  background-color: var(--text);
+
+  hr {
+    border-top: 5px solid;
+    width: 20%;
+  }
+
+  &__headings {
+    text-align: center;
+    position: relative;
+    padding: 30px;
+  }
+
+  &__textarea {
+    letter-spacing: 1px;
+    line-height: normal;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  h1 {
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "OpenSans ExtraBold";
+    margin-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  h2 {
+    color: var(--elements);
+    font-weight: bold;
+    bottom: 8px;
+    font-size: 20px;
+  }
+
+  &__img {
+    width: 200;
+    height: 200;
+    border-radius: 100px;
+    padding: 10px 10px 20px 0px;
+    object-fit: cover;
+  }
+
+  &__msg {
+    display: flex;
+    white-space: nowrap;
+    padding: 10px;
+
+    h2 {
+      font-size: 26px;
+      color: black;
+    }
+  }
+
+  &__typeout {
+    display: inline-block;
+    vertical-align: bottom;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+
+  &__typeout > span {
+    color: var(--elements);
+    font-size: 26rem;
+    display: grid;
+    height: 1.5em;
+    overflow: hidden;
+  }
+
+  &__typeout span span {
+    width: 0%;
+    max-width: max-content;
+    overflow: hidden;
+    height: inherit;
+    word-break: break-all;
+    animation: c 0.5s infinite steps(1), t 2s linear infinite alternate,
+      m 16s steps(4) infinite;
+  }
+
+  &__type span span:before {
+    content: " ";
+    display: inline-block;
+  }
+
+  @keyframes t {
+    90%,
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes c {
+    0%,
+    100% {
+      box-shadow: 5px 0 0 #0000;
+    }
+    50% {
+      box-shadow: 5px 0 0 crimson;
+    }
+  }
+
+  @keyframes m {
+    100% {
+      transform: translateY(-400%);
+    }
+  }
+
+  @include respond-to("small") {
+    &__headings {
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+      font-size: 30px;
+    }
+    hr {
+      border-top: 5px solid;
+      width: 10%;
+    }
+    }
+
+    
+    &__imgtext {
+      display: flex;
+      padding: 20px;
+      //grid-template-columns: min-content auto;
+      // grid-template-rows: 1fr auto;
+    }
+
+    &__msg {
+      display: flex;
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+
+    &__typeout {
+      display: inline-block;
+      font-size: 58rem;
+    }
+
+    &__textarea {
+      display: inline-block;
+      padding-left: 30px;
+    }
+  }
+}
