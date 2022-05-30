@@ -1,13 +1,13 @@
 .hero {
   background-color: var(--background);
-  padding: 10rem;
+  padding: 20rem;
   font-family: sans-serif;
   background-attachment: fixed;
 
   &--bgimg {
     //background-image: url(../../images/hero-small.svg);
     background: url(../../images/hero-small.svg) no-repeat center;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -73,6 +73,7 @@
     line-height: 30rem;
     margin-bottom: 15rem;
     letter-spacing: 2px;
+    margin-left: 15rem;
   }
 
   &__msg {
@@ -89,6 +90,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     letter-spacing: 2px;
+    margin-left: 15rem;
   }
 
   @include respond-to("small") {
@@ -137,6 +139,7 @@
 
     &--bgimg {
       background-image: url(../../images/hero-big.svg);
+      height: 80vh;
     }
   }
 }

@@ -1,9 +1,10 @@
 .form {
   display: flex;
-  padding: 10rem;
+  padding: 20rem;
 
   &__group {
     margin-top: 5rem;
+    //float: left;
   }
 
   &__btn1 {
@@ -14,8 +15,10 @@
     font-weight: bold;
     border-radius: 5rem;
     margin-right: 10rem;
+    margin-bottom: 25px;
     border: 2px solid crimson;
     letter-spacing: 2px;
+    font-size: 15px;
   }
 
   &__btn2 {
@@ -27,6 +30,28 @@
     border-radius: 5rem;
     border: 2px solid crimson;
     letter-spacing: 2px;
+    font-size: 15px;
     padding: 10rem 30rem 10rem 30rem;
+  }
+
+  @include respond-to("small") {
+    .form {
+      padding: 30rem;
+    }
+
+    &__btn1 {
+      padding: 15rem 40rem 15rem 40rem;
+      font-size: 20px;
+      letter-spacing: 2px;
+      border-radius: 10rem;
+      margin-right: 30rem;
+    }
+
+    &__btn2 {
+      padding: 15rem 40rem 15rem 40rem;
+      font-size: 20px;
+      letter-spacing: 1px;
+      border-radius: 10rem;
+    }
   }
 }
