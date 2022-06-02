@@ -1,0 +1,136 @@
+.skills {
+  //background-color: var(--text);
+  background-color: white;
+  padding-bottom: 50px;
+
+  &__myskills {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 2px;
+  }
+
+  &__sub {
+    color: var(--elements);
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  &__content {
+    display: block;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding-left: 20px;
+  }
+  &__leftcontent {
+    p {
+      text-align: justify;
+      line-height: 1.5;
+      //display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      padding: 0px 20px 20px 20px;
+      //letter-spacing: 1pt;
+      em {
+        color: blue;
+      }
+    }
+  }
+  &__download {
+    background-color: var(--elements);
+    padding: 10px;
+    border-radius: 6px;
+    color: var(--text);
+    margin-left: 20px;
+    border-bottom: 20px;
+    font-weight: bold;
+  }
+  &__rightcontent {
+    margin-top: 30px;
+  }
+
+  &__info {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    &__left {
+      flex: 50%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &__right {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &__line {
+      height: 5px;
+      width: 95%;
+      margin-left: 20px;
+      margin-top: 10px;
+      background-color: var(--text);
+      background: red;
+      left: 0;
+      top: 0;
+      content: "";
+      position: relative;
+
+      &__javascript {
+        height: 5px;
+        width: 80%;
+        background: red;
+        margin-left: 20px;
+        margin-top: 10px;
+        background-color: var(--elements);
+      }
+    }
+  }
+
+  &__bar {
+    margin-bottom: 20px;
+  }
+
+  @include respond-to("small") {
+    max-width: 100%;
+    &__myskills {
+      padding-top: 70px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      font-size: 50px;
+      padding-bottom: 3px;
+    }
+
+    &__sub {
+      font-size: 20px;
+    }
+
+    &__content {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+    }
+    &__leftcontent {
+      width: 50%;
+      flex-wrap: wrap;
+    }
+
+    &__rightcontent {
+      margin-top: 0px;
+      flex: 50%;
+    }
+  }
+}

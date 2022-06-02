@@ -39,12 +39,14 @@
     display: block;
     li {
       padding: 15rem 10rem;
-      border-bottom: 1px var(--text) solid;
+      //border-bottom: 1px var(--text) solid;
+      border-bottom: 1px var(--elements) solid;
     }
   }
 
   @include respond-to("small") {
     grid-template-columns: max-content 1fr;
+
     &__name {
       display: inline-block;
       font-size: 20rem;
@@ -64,6 +66,7 @@
       background-color: var(--elements);
       color: var(--text);
       font-size: 20rem;
+      //border: none;
       //background-color: green;
       //display: inline;
 
@@ -74,6 +77,7 @@
 
     &__toggle:checked ~ &__droplist {
       display: flex;
+      border: none;
     }
   }
 }
