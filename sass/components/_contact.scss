@@ -1,0 +1,206 @@
+.contact {
+  background-color: var(--background);
+  padding-bottom: 40px;
+  &__title {
+    text-align: center;
+    margin-top: 20px;
+    &__header {
+      color: var(--text);
+      font-weight: 500;
+      font-size: 40px;
+      font-family: "ubuntu" sans-serif;
+      padding-top: 50px;
+    }
+
+    &__sub {
+      color: var(--elements);
+      font-size: 20px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__subheading {
+    display: flex;
+    flex-flow: column wrap;
+
+    &__details {
+      color: var(--text);
+
+      &__text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding-left: 30px;
+      }
+      &__msg {
+        //display: block;
+        text-align: justify;
+        font-family: "ubuntu" sans-serif;
+        padding: 30px;
+      }
+
+      &__personaldetails {
+        display: flex;
+        flex-direction: column;
+        //flex-wrap: wrap;
+
+        .row {
+          display: flex;
+          margin-bottom: 20px;
+          .user-image {
+            width: 35px;
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+
+          .user-address {
+            width: 35px;
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+
+          .user-email {
+            width: 35px;
+            margin-left: 30px;
+            margin-right: 30px;
+          }
+          .info {
+            .head {
+              font-weight: 600;
+            }
+            .sub-title {
+              color: #e7decc;
+            }
+          }
+        }
+      }
+    }
+
+    &__messageme {
+      display: flex;
+      flex-direction: column;
+      &__text {
+        color: var(--text);
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        &__name,
+        &__subject,
+        &__email {
+          margin-bottom: 10px;
+          input {
+            padding: 10px 10px 10px 0px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 6px;
+            font-size: 17px;
+            background-color: var(--background);
+            color: var(--text);
+          }
+        }
+
+        ::placeholder {
+          width: 100%;
+          color: #e7decc;
+          background-color: var(--background);
+          padding: 10px;
+        }
+
+        &__message {
+          textarea {
+            background-color: var(--background);
+            color: var(--text);
+            padding: 10px 10px 10px 0px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 6px;
+            font-size: 17px;
+            resize: none;
+            overflow: hidden;
+          }
+        }
+
+        &__button {
+          color: var(--text);
+          display: flex;
+          align-items: center;
+          button {
+            width: 160px !important;
+            height: 45px;
+            border: 2px solid crimson;
+            border-radius: 6px;
+            background-color: var(--elements);
+            font-weight: 500;
+            font-size: 18px;
+            cursor: pointer;
+            flex-wrap: nowrap;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to("small") {
+    &__title {
+      margin-top: 50px;
+      &__header {
+        font-size: 50px;
+        padding-top: 70px;
+      }
+
+      &__sub {
+        font-size: 30px;
+        padding-bottom: 50px;
+      }
+    }
+
+    &__subheading {
+      display: flex;
+      flex-direction: row;
+      &__details {
+        width: 50%;
+        flex-wrap: wrap;
+
+        &__personaldetails {
+          .row {
+            display: flex;
+            margin-bottom: 50px;
+          }
+        }
+      }
+
+      &__messageme {
+        //display: flex;
+        margin-top: 0px;
+        flex: 50%;
+        &__text {
+          margin-top: 0px;
+        }
+
+        .form {
+          display: inline-block;
+          &__name,
+          &__email {
+            float: left;
+            width: 48%;
+          }
+
+          &__name {
+            margin-right: 23px;
+          }
+        }
+      }
+    }
+  }
+}
