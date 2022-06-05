@@ -56,9 +56,19 @@
 
           <div class="form">
             <div class="form__group">
-              <input class="form__btn1" type="submit" value="My Portfolio" />
+              <input
+                class="form__btn1"
+                type="submit"
+                value=" View My Portfolio"
+                onclick="document.location='#portfolio'"
+              />
 
-              <input class="form__btn2" type="submit" value="More About Me" />
+              <input
+                class="form__btn2"
+                type="submit"
+                value="More About Me"
+                onclick="document.location='#about'"
+              />
             </div>
           </div>
         </div>
@@ -273,14 +283,21 @@
               </div>
 
               <div class="row">
-                <img
-                  class="user-email"
-                  src="images/email.svg"
-                  alt="Email icon"
-                />
+                <a href="mailto:ksscholastic@gmail.com"
+                  ><img
+                    class="user-email"
+                    src="images/email.svg"
+                    alt="Email icon"
+                /></a>
                 <div class="info">
-                  <div class="head">Email</div>
-                  <div class="sub-title">ksscholastic@gmail.com</div>
+                  <div class="head">
+                    <a href="mailto:ksscholastic@gmail.com">Send Email</a>
+                  </div>
+                  <div class="sub-title">
+                    <a href="mailto:ksscholastic@gmail.com"
+                      >ksscholastic@gmail.com</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>

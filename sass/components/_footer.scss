@@ -8,5 +8,6 @@
   @include respond-to("small") {
     position: flex;
     bottom: 0;
+    font-size: 16rem;
   }
 }

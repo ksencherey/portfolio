@@ -19,6 +19,7 @@
     border: 2px solid crimson;
     letter-spacing: 2px;
     font-size: 15px;
+    cursor: pointer;
   }
 
   &__btn2 {
@@ -32,6 +33,7 @@
     letter-spacing: 2px;
     font-size: 15px;
     padding: 10rem 30rem 10rem 30rem;
+    cursor: pointer;
   }
 
   @include respond-to("small") {
@@ -44,7 +46,7 @@
       font-size: 20px;
       letter-spacing: 2px;
       border-radius: 10rem;
-      margin-right: 30rem;
+      margin-right: 10rem;
     }
 
     &__btn2 {

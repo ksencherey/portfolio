@@ -603,6 +603,7 @@ h1 {
   .footer {
     position: flex;
     bottom: 0;
+    font-size: 16rem;
   }
 }
 
@@ -812,6 +813,7 @@ h1 {
   border: 2px solid crimson;
   letter-spacing: 2px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .form__btn2 {
@@ -827,6 +829,7 @@ h1 {
   letter-spacing: 2px;
   font-size: 15px;
   padding: 10rem 30rem 10rem 30rem;
+  cursor: pointer;
 }
 
 @media (min-width: 767px) {
@@ -838,7 +841,7 @@ h1 {
     font-size: 20px;
     letter-spacing: 2px;
     border-radius: 10rem;
-    margin-right: 30rem;
+    margin-right: 10rem;
   }
   .form__btn2 {
     padding: 15rem 40rem 15rem 40rem;
