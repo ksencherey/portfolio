@@ -50,12 +50,13 @@
   }
   &__download {
     background-color: var(--elements);
-    padding: 10px;
-    border-radius: 6px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 8px;
     color: var(--text);
     margin-left: 20px;
     border-bottom: 20px;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 20px;
   }
   &__rightcontent {
     margin-top: 30px;
@@ -132,6 +133,11 @@
     &__rightcontent {
       margin-top: 0px;
       flex: 50%;
+    }
+
+    &__download {
+      padding: 15px 20px 15px 20px;
+      border-radius: 10px;
     }
   }
 }
