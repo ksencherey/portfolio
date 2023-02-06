@@ -1,10 +1,8 @@
 .aboutme {
   background-color: var(--text);
-
-  //hr {
-  // border-top: 2px solid crimson;
-  //width: 20%;
-  //}
+  p {
+    text-align: justify;
+  }
 
   &__headings {
     text-align: center;
@@ -35,13 +33,29 @@
   }
 
   &__img {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 10px;
     img {
-      width: 200;
-      height: 200;
-      border-radius: 10px;
-      //padding: 10px 10px 20px 0px;
-      //object-fit: cover;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
     }
+  }
+  #first-part::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  #second-part::before {
+    content: "\a";
+    white-space: pre;
+  }
+
+  &__righthand {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   &__msg {
@@ -107,8 +121,12 @@
       transform: translateY(-400%);
     }
   }
-
-  @include respond-to("small") {
+}
+@include respond-to("small") {
+  .aboutme {
+    &__img {
+      padding-top: 100px;
+    }
     &__headings {
       h1 {
         font-size: 50px;
@@ -125,13 +143,11 @@
     &__imgtext {
       display: flex;
       padding: 20px;
-      //grid-template-columns: min-content auto;
-      // grid-template-rows: 1fr auto;
     }
 
     &__msg {
       display: flex;
-      padding-top: 50px;
+      padding-top: 30px;
       padding-left: 30px;
     }
 
@@ -144,5 +160,11 @@
       display: inline-block;
       padding-left: 30px;
     }
+  }
+
+  #first-part,
+  #second-part {
+    display: inline-block;
+    text-align: baseline;
   }
 }
