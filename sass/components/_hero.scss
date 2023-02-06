@@ -5,7 +5,7 @@
   background-attachment: fixed;
 
   &--bgimg {
-    //background-image: url(../../images/hero-small.svg);
+    background-image: url(../images/hero-small.svg);
     background: url(../images/hero-small.svg) no-repeat center;
     height: 60vh;
     background-size: cover;
@@ -138,7 +138,7 @@
     }
 
     &--bgimg {
-      background-image: url(../../images/hero-big.svg);
+      background-image: url(../images/hero-big.svg);
       height: 60vh;
     }
   }
