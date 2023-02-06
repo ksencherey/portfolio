@@ -1,18 +1,22 @@
 .myportfolio {
   background-color: var(--background);
+  padding-bottom: 80px;
+  padding-top: 80px;
 
   h2 {
     text-align: center;
     color: var(--text);
-    font-size: 25rem;
+    font-size: 32rem;
     font-weight: bold;
     padding-top: 30rem;
+    padding-bottom: 30px;
   }
 
   &__para1 {
     color: var(--elements);
     text-align: center;
     font-weight: bold;
+    font-size: 25px;
   }
 
   &__card {
@@ -52,10 +56,15 @@
     color: var(--text);
     margin-top: 10px;
   }
+}
 
-  @include respond-to("small") {
+@include respond-to("small") {
+  .myportfolio {
     &__card {
       width: calc(33% - 20px);
+      img{
+        padding-top: 20px;
+      }
     }
 
     &__content {
@@ -66,7 +75,8 @@
     }
 
     &__box {
-      height: 30vh;
+      width: 350px;
+      height: 230px;
       padding-top: 5px;
     }
   }

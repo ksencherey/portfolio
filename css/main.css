@@ -878,18 +878,22 @@ h1 {
 
 .myportfolio {
   background-color: var(--background);
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 .myportfolio h2 {
   text-align: center;
   color: var(--text);
-  font-size: 25rem;
+  font-size: 32rem;
   font-weight: bold;
   padding-top: 30rem;
+  padding-bottom: 30px;
 }
 .myportfolio__para1 {
   color: var(--elements);
   text-align: center;
   font-weight: bold;
+  font-size: 25px;
 }
 .myportfolio__card {
   border-radius: 6px;
@@ -923,9 +927,13 @@ h1 {
   color: var(--text);
   margin-top: 10px;
 }
+
 @media (min-width: 767px) {
   .myportfolio__card {
     width: calc(33% - 20px);
+  }
+  .myportfolio__card img {
+    padding-top: 20px;
   }
   .myportfolio__content {
     display: flex;
@@ -933,11 +941,11 @@ h1 {
     padding: 30px;
   }
   .myportfolio__box {
-    height: 30vh;
+    width: 350px;
+    height: 230px;
     padding-top: 5px;
   }
 }
-
 .skills {
   background-color: white;
   padding-bottom: 50px;
